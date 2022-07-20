@@ -1,8 +1,7 @@
-from email.policy import default
 import requests
+from decouple import config 
 from time import sleep
 from datetime import datetime
-from decouple import config 
 
 CPF = config("CPF", default="X")
 NF = config("NF", default="X")
